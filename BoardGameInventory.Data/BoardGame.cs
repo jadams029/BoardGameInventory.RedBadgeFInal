@@ -8,10 +8,12 @@ using System.Threading.Tasks;
 namespace BoardGameInventory.Data
 {
     public enum Genre { Abstract= 1, AreaControl, Deckbuilder, Dexterity, Drafting, DungeonCrawler, EngineBuilder, EuroGame, Legacy, PushYourLuck, RollAndMove, SocialDeduction, StoryTelling, WorkerPlacement, WarGame}
-    public class BoardGames
+    public class BoardGame
     {
         [Key]
         public int GameID { get; set; }
+        [Required]
+        public Guid OwnerID { get; set; }
         [Required]
         [Display(Name ="Title")]
         public string GameTitle { get; set; }

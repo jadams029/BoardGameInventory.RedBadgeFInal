@@ -54,11 +54,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BoardGameService.cs" />
+    <Compile Include="ExpansionServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BoardGameInventory.Data\BoardGameInventory.Data.csproj">
+      <Project>{86C1AA0F-443E-4A1E-A236-B8655DB960EC}</Project>
+      <Name>BoardGameInventory.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BoardGameInventory.Models\BoardGameInventory.Models.csproj">
+      <Project>{E289B25E-1F49-403D-98D5-99C581E4ACE6}</Project>
+      <Name>BoardGameInventory.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

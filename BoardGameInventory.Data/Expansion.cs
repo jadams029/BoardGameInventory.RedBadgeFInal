@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BoardGameInventory.Data
 {
-    public class Expansions : BoardGames
+    public class Expansion : BoardGame
     {
         [Required]
         [Display(Name ="Expansion Title")]

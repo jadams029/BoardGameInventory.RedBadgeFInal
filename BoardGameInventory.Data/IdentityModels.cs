@@ -31,9 +31,9 @@ namespace BoardGameInventory.Data
         {
             return new ApplicationDbContext();
         }
-        //public DbSet<>  { get; set;}
-        //public DbSet<>  { get; set;}
-        //public DbSet<>  { get; set;}
+        public DbSet<BoardGame> BoardGames { get; set;}
+        public DbSet<Expansion> Expansions  { get; set;}
+        public DbSet<RPGBook> RPGBooks { get; set;}
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

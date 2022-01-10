@@ -54,8 +54,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BoardGames.cs" />
-    <Compile Include="Expansions.cs" />
+    <Compile Include="BoardGame.cs" />
+    <Compile Include="Expansion.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Migrations\202201101919552_InitialMigration.cs" />
     <Compile Include="Migrations\202201101919552_InitialMigration.Designer.cs">
@@ -63,7 +63,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RPGBooks.cs" />
+    <Compile Include="RPGBook.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

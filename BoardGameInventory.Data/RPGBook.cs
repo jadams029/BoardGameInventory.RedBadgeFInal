@@ -8,10 +8,12 @@ using System.Threading.Tasks;
 namespace BoardGameInventory.Data
 {
     public enum BookType { Core = 1, Supplement, Campaign, Adventure, }
-    public class RPGBooks
+    public class RPGBook
     {
         [Key]
         public int BookID { get; set; }
+        [Required]
+        public Guid OwnerID { get; set; }
         [Required]
         public string BookTitle { get; set; }
         [Required]
