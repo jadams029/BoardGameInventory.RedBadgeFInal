@@ -10,8 +10,10 @@ namespace BoardGameInventory.Data
     public class Expansions : BoardGames
     {
         [Required]
+        [Display(Name ="Expansion Title")]
         public string ExpansionTitle { get; set; }
         [Required]
+        [Display(Name ="Changes to Case Game")]
         public string ChangesToBase { get; set; }
     }
 }
