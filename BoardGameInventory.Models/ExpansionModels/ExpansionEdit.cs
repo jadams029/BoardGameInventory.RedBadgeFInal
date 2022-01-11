@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace BoardGameInventory.Models.ExpansionModels
 {
-    public class ExpansionEdit : BoardGameModels.BoardGameEdit
+    public class ExpansionEdit 
     {
+        public int ExpansionID { get; set; }
         public string ExpansionTitle { get; set; }
         public string ChangesToBase { get; set; }
     }
