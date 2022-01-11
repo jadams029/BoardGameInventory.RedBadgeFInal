@@ -9,6 +9,7 @@ namespace BoardGameInventory.Models.RPGBookModels
 {
     public class RPGBookEdit
     {
+        public int BookID { get; set; }
         public string BookTitle { get; set; }
         public string RPGSystem { get; set; }
         public BookType BookType { get; set; }

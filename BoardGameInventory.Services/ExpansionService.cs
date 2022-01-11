@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BoardGameInventory.Services
 {
-    public class ExpansionServices
+    public class ExpansionService
     {
     }
 }

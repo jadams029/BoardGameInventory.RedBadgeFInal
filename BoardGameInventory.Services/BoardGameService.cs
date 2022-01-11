@@ -33,15 +33,14 @@ namespace BoardGameInventory.Services
                 return ctx.SaveChanges() == 1;
             }
         }
-        public IEnumerable<BoardGameListItem> GetBoardGames()
+        public IEnumerable<BoardGameListItem> GetBoardGame()
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var query = ctx.BoardGames.Where(e => e.OwnerID == _userID).Select(e => new BoardGameListItem
                 {
                     GameID = e.GameID,
-                    GameTitle = e.GameTitle,
-
+                    GameTitle = e.GameTitle
                 });
                 return query.ToArray();
             }
