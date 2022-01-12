@@ -97,7 +97,7 @@ namespace BoardGameInventory.Controllers
         {
             var service = CreateBoardGameService();
             service.DeleteBoardGame(id);
-            TempData["SaveResult"] = "Your Board Game Was Deleted";
+            TempData["SaveResult"] = "Your Board Game was Deleted.";
             return RedirectToAction("Index");
         }
         private BoardGameService CreateBoardGameService()
