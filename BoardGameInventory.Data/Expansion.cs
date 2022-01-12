@@ -19,8 +19,8 @@ namespace BoardGameInventory.Data
         [Required]
         [Display(Name ="Changes to Case Game")]
         public string ChangesToBase { get; set; }
-        [ForeignKey("GameID")]
-        public int GameID { get; set; }
+       // [ForeignKey("GameID")]
+        //public int GameID { get; set; }
         public virtual BoardGame Game { get; set; }
     }
 }

@@ -1,0 +1,42 @@
+﻿@model BoardGameInventory.Models.ExpansionModels.ExpansionDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ExpansionDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpansionID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExpansionID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpansionTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExpansionTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangesToBase)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangesToBase)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

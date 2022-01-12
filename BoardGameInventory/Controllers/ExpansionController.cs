@@ -9,6 +9,7 @@ using System.Web.Mvc;
 
 namespace BoardGameInventory.Controllers
 {
+    [Authorize]
     public class ExpansionController : Controller
     {
         // GET: Expansion

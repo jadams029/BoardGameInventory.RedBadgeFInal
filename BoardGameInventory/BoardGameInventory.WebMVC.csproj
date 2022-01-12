@@ -237,12 +237,24 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\BoardGame\Index.cshtml" />
+    <Content Include="Views\BoardGame\Create.cshtml" />
+    <Content Include="Views\BoardGame\Details.cshtml" />
+    <Content Include="Views\BoardGame\Edit.cshtml" />
+    <Content Include="Views\BoardGame\Delete.cshtml" />
+    <Content Include="Views\Expansion\Index.cshtml" />
+    <Content Include="Views\Expansion\Create.cshtml" />
+    <Content Include="Views\Expansion\Edit.cshtml" />
+    <Content Include="Views\Expansion\Delete.cshtml" />
+    <Content Include="Views\Expansion\Details.cshtml" />
+    <Content Include="Views\RPGBook\Index.cshtml" />
+    <Content Include="Views\RPGBook\Create.cshtml" />
+    <Content Include="Views\RPGBook\Details.cshtml" />
+    <Content Include="Views\RPGBook\Edit.cshtml" />
+    <Content Include="Views\RPGBook\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\BoardGame\" />
-    <Folder Include="Views\Expansion\" />
-    <Folder Include="Views\RPGBook\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
