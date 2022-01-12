@@ -28,17 +28,15 @@ namespace BoardGameInventory.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(BoardGameCreate model)
         {
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
+            if (!ModelState.IsValid) return View(model);
+
             var service = CreateBoardGameService();
             if (service.CreateBoardGame(model))
             {
-                TempData["SaveResult"] = "Your Board Game was Added to Inventory";
+                TempData["SaveResult"] = "Your Board Game was Added to Inventory.";
                 return RedirectToAction("Index");
             };
-            ModelState.AddModelError("", "Board Game Not added.");
+            ModelState.AddModelError("", "Board Game not added.");
             return View(model);
         }
         public ActionResult Details(int id)

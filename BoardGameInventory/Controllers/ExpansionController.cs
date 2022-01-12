@@ -34,7 +34,7 @@ namespace BoardGameInventory.Controllers
             var service = CreateExpansionService();
             if (service.CreateExpansion(model))
             {
-                TempData["SaveResult"] = "Your Expansion was added to Inventory";
+                TempData["SaveResult"] = "Your Expansion was added to Inventory.";
                 return RedirectToAction("Index");
             };
             ModelState.AddModelError("", "Expansion not added.");

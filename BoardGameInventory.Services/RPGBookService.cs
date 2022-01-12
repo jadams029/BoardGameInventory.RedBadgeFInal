@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BoardGameInventory.Services
 {
-    class RPGBookService
+    public class RPGBookService
     {
         private readonly Guid _userID;
         public RPGBookService (Guid userID)
