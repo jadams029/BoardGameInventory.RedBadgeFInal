@@ -33,7 +33,7 @@ namespace BoardGameInventory.Services
                 return ctx.SaveChanges() == 1;
             }
         }
-        public IEnumerable<BoardGameListItem> GetBoardGame()
+        public IEnumerable<BoardGameListItem> GetBoardGames()
         {
             using (var ctx = new ApplicationDbContext())
             {

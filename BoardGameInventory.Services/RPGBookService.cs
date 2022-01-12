@@ -30,7 +30,7 @@ namespace BoardGameInventory.Services
                 return ctx.SaveChanges() == 1;
             }
         }
-        public IEnumerable<RPGBookListItem> GetRPGBook()
+        public IEnumerable<RPGBookListItem> GetRPGBooks()
         {
             using (var ctx = new ApplicationDbContext())
             {

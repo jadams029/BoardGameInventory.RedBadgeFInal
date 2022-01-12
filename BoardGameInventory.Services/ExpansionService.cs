@@ -30,7 +30,7 @@ namespace BoardGameInventory.Services
                 return ctx.SaveChanges() == 1;
             }
         }
-        public IEnumerable<ExpansionListItem> GetExpansion()
+        public IEnumerable<ExpansionListItem> GetExpansions()
         {
             using (var ctx = new ApplicationDbContext())
             {
