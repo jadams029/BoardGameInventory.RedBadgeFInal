@@ -65,6 +65,10 @@
     <Compile Include="Migrations\202201122059308_SecondMigration.Designer.cs">
       <DependentUpon>202201122059308_SecondMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202201141419154_foreignKeyWork.cs" />
+    <Compile Include="Migrations\202201141419154_foreignKeyWork.Designer.cs">
+      <DependentUpon>202201141419154_foreignKeyWork.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RPGBook.cs" />
@@ -79,6 +83,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202201122059308_SecondMigration.resx">
       <DependentUpon>202201122059308_SecondMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201141419154_foreignKeyWork.resx">
+      <DependentUpon>202201141419154_foreignKeyWork.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

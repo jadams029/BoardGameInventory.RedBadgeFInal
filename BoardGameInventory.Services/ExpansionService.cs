@@ -21,6 +21,7 @@ namespace BoardGameInventory.Services
             var entity = new Expansion()
             {
                 OwnerID = _userID,
+                GameID = model.GameID,
                 ExpansionTitle = model.ExpansionTitle,
                 ChangesToBase = model.ChangesToBase
             };
@@ -53,7 +54,7 @@ namespace BoardGameInventory.Services
                     ExpansionTitle = entity.ExpansionTitle,
                     BoardGame = new BoardGameDetail()
                     {
-                        //GameID = entity.GameID,
+                        GameID = entity.GameID,
                         GameTitle = entity.Game.GameTitle,
                         Genre = entity.Game.Genre,
                         NumberOfPlayers = entity.Game.NumberOfPlayers,

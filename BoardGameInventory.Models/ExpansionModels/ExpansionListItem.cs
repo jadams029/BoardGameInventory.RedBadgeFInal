@@ -13,3 +13,4 @@ namespace BoardGameInventory.Models.ExpansionModels
         public string ChangesToBaseGame { get; set; }
     }
 }
+ 

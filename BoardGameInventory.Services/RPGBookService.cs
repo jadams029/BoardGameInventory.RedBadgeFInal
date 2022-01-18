@@ -18,8 +18,7 @@ namespace BoardGameInventory.Services
         public bool CreateRPGBook(RPGBookCreate model)
         {
             var entity = new RPGBook()
-            {
-                OwnerID = model.OwnerID,
+            {                
                 BookTitle = model.BookTitle,
                 RPGSystem = model.RPGSystem,
                 BookType = model.BookType

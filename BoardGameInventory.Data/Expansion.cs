@@ -8,19 +8,19 @@ using System.Threading.Tasks;
 
 namespace BoardGameInventory.Data
 {
-    public class Expansion 
+    public class Expansion
     {
         public Guid OwnerID { get; set; }
         [Key]
         public int ExpansionID { get; set; }
         [Required]
-        [Display(Name ="Expansion Title")]
+        [Display(Name = "Expansion Title")]
         public string ExpansionTitle { get; set; }
         [Required]
-        [Display(Name ="Changes to Case Game")]
+        [Display(Name = "Changes to Base Game")]
         public string ChangesToBase { get; set; }
-       // [ForeignKey("GameID")]
-        //public int GameID { get; set; }
+        [ForeignKey("Game")]
+        public int GameID { get; set; }
         public virtual BoardGame Game { get; set; }
     }
 }

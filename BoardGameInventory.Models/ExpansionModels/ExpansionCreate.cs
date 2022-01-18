@@ -8,6 +8,7 @@ namespace BoardGameInventory.Models.ExpansionModels
 {
     public class ExpansionCreate 
     {
+        public int GameID { get; set; }
         public string ExpansionTitle { get; set; }
         public string ChangesToBase { get; set; }
     }

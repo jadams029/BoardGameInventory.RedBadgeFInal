@@ -8,9 +8,8 @@ using System.Threading.Tasks;
 namespace BoardGameInventory.Models.RPGBookModels
 {
     public class RPGBookCreate
-    {
-        public int BookID { get; set; }
-        public Guid OwnerID { get; set; }
+    {        
+        
         public string BookTitle { get; set; }
         public string RPGSystem { get; set; }
         public BookType BookType { get; set; }

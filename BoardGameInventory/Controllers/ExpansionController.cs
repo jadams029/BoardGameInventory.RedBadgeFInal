@@ -18,7 +18,7 @@ namespace BoardGameInventory.Controllers
             var userID = Guid.Parse(User.Identity.GetUserId());
             var service = new ExpansionService(userID);
             var model = service.GetExpansions();
-            return View();
+            return View(model);
         }
         public ActionResult Create()
         {
@@ -54,7 +54,7 @@ namespace BoardGameInventory.Controllers
             var model = new ExpansionEdit
             {
                 ExpansionID = detail.ExpansionID,
-                ExpansionTitle = detail.ExpansionTitle,
+                ExpansionTitle = detail.ExpansionTitle,                
                 ChangesToBase = detail.ChangesToBase
             };
             return View(model);
