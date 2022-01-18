@@ -57,7 +57,8 @@ namespace BoardGameInventory.Services
                     Genre = entity.Genre,
                     NumberOfPlayers = entity.NumberOfPlayers,
                     TimeToPlayHours = entity.TimeToPlayHours,
-                    TimesPlayed = entity.TimesPlayed
+                    TimesPlayed = entity.TimesPlayed,
+                    Expansions = entity.Expansions
                 };
             }
         }
