@@ -32,5 +32,6 @@ namespace BoardGameInventory.Data
         [Required]
         [Display(Name ="Are there Expansions?")]
         public bool Expansions { get; set; }
+        public virtual List<Expansion> ExpansionsList { get; set; }
     }
 }
