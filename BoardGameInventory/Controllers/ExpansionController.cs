@@ -54,6 +54,7 @@ namespace BoardGameInventory.Controllers
             var model = new ExpansionEdit
             {
                 ExpansionID = detail.ExpansionID,
+                GameID = detail.BoardGame.GameID,
                 ExpansionTitle = detail.ExpansionTitle,                
                 ChangesToBase = detail.ChangesToBase
             };

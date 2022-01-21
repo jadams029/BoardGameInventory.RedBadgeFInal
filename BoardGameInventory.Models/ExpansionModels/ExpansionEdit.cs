@@ -10,6 +10,8 @@ namespace BoardGameInventory.Models.ExpansionModels
     public class ExpansionEdit 
     {
         [Required]
+        public int GameID { get; set; }
+        [Required]
         public int ExpansionID { get; set; }
         [Required]
         [Display(Name = "Expansion Title")]
