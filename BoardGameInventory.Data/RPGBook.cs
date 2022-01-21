@@ -7,7 +7,14 @@ using System.Threading.Tasks;
 
 namespace BoardGameInventory.Data
 {
-    public enum BookType { Core = 1, Supplement, Campaign, Adventure, }
+    public enum BookType 
+    {
+
+        Core = 1,        
+        Supplement,
+        Campaign,
+        Adventure,
+    }
     public class RPGBook
     {
         [Key]

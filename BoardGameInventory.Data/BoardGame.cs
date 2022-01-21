@@ -10,19 +10,29 @@ namespace BoardGameInventory.Data
     public enum Genre
     {
         Abstract = 1,
+        [Display(Name ="Area Control")]
         AreaControl,
         Deckbuilder,
         Dexterity,
         Drafting,
+        [Display(Name ="Dungeon Crawler")]
         DungeonCrawler,
+        [Display(Name ="Engine Builder")]
         EngineBuilder,
+        [Display(Name ="Euro Game")]
         EuroGame,
         Legacy,
+        [Display(Name ="Push Your Luck")]
         PushYourLuck,
+        [Display(Name ="Roll And Move")]
         RollAndMove,
+        [Display(Name ="Social Deduction")]
         SocialDeduction,
+        [Display(Name ="Story Telling")]
         StoryTelling,
+        [Display(Name ="Worker Placement")]
         WorkerPlacement,
+        [Display(Name ="War Game")]
         WarGame
     }
     public class BoardGame
