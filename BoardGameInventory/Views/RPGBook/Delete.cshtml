@@ -28,6 +28,14 @@
         </dd>
 
         <dt>
+            @Html.DisplayNameFor(model => model.BookType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookType)
+        </dd>
+
+        <dt>
             @Html.DisplayNameFor(model => model.RPGSystem)
         </dt>
 
@@ -42,7 +50,7 @@
 
         <div class="form-actions no-color">
             <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Back to List", "Index")
+            @Html.ActionLink("Back to Book List", "Index")
         </div>
     }
 </div>

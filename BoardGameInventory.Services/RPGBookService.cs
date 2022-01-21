@@ -49,6 +49,7 @@ namespace BoardGameInventory.Services
                 var entity = ctx.RPGBooks.Single(e => e.BookID == id && e.OwnerID == _userID);
                 return new RPGBookDetail
                 {
+                    BookID = entity.BookID,
                     BookTitle = entity.BookTitle,
                     BookType = entity.BookType,
                     RPGSystem = entity.RPGSystem

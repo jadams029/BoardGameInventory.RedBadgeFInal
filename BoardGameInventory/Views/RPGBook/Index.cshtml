@@ -39,9 +39,9 @@
                 @Html.DisplayFor(modelItem => item.BookTitle)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.BookID }) |
-                @Html.ActionLink("Details", "Details", new { id = item.BookID }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.BookID })
+                @Html.ActionLink("Edit Book", "Edit", new { id = item.BookID }) |
+                @Html.ActionLink("Book Info", "Details", new { id = item.BookID }) |
+                @Html.ActionLink("Delete Book", "Delete", new { id = item.BookID })
             </td>
         </tr>
     }

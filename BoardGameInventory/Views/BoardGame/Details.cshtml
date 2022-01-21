@@ -10,13 +10,6 @@
     <h4>BoardGameDetail</h4>
     <hr />
     <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.GameID)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.GameID)
-        </dd>
 
         <dt>
             @Html.DisplayNameFor(model => model.GameTitle)
@@ -24,6 +17,14 @@
 
         <dd>
             @Html.DisplayFor(model => model.GameTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Genre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Genre)
         </dd>
 
         <dt>
@@ -35,11 +36,11 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.TimeToPlayHours)
+            @Html.DisplayNameFor(model => model.TimeToPlayMin)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.TimeToPlayHours)
+            @Html.DisplayFor(model => model.TimeToPlayMin)
         </dd>
 
         <dt>
@@ -61,6 +62,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new {id = Model.GameID}) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Edit Game", "Edit", new {id = Model.GameID}) |
+    @Html.ActionLink("Back to Game List", "Index")
 </p>

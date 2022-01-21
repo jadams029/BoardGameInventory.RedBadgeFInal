@@ -18,7 +18,7 @@ namespace BoardGameInventory.Models.BoardGameModels
         [Required]
         public int NumberOfPlayers { get; set; }
         [Required]
-        public decimal TimeToPlayHours { get; set; }
+        public int TimeToPlayMin { get; set; }
         [Required]
         public int TimesPlayed { get; set; }
         [Required]

@@ -23,7 +23,7 @@ namespace BoardGameInventory.Services
                 GameTitle = model.GameTitle,
                 Genre = model.Genre,
                 NumberOfPlayers = model.NumberOfPlayers,
-                TimeToPlayHours = model.TimeToPlayHours,
+                TimeToPlayMin = model.TimeToPlayMin,
                 TimesPlayed = model.TimesPlayed,
                 Expansions = model.Expansions
             };
@@ -56,10 +56,11 @@ namespace BoardGameInventory.Services
                     GameTitle = entity.GameTitle,
                     Genre = entity.Genre,
                     NumberOfPlayers = entity.NumberOfPlayers,
-                    TimeToPlayHours = entity.TimeToPlayHours,
+                    TimeToPlayMin = entity.TimeToPlayMin,
                     TimesPlayed = entity.TimesPlayed,
                     Expansions = entity.Expansions,
-                    //ListOfExpanions = entity.ExpansionsList.Select
+                    
+
                     
                 };
             }
@@ -73,7 +74,7 @@ namespace BoardGameInventory.Services
                 entity.GameTitle = model.GameTitle;
                 entity.Genre = model.Genre;
                 entity.NumberOfPlayers = model.NumberOfPlayers;
-                entity.TimeToPlayHours = model.TimeToPlayHours;
+                entity.TimeToPlayMin = model.TimeToPlayMin;
                 entity.TimesPlayed = model.TimesPlayed;
                 entity.Expansions = model.Expansions;
 

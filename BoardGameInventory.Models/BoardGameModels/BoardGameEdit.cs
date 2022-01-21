@@ -13,16 +13,22 @@ namespace BoardGameInventory.Models.BoardGameModels
         [Required]
         public int GameID { get; set; }
         [Required]
+        [Display(Name = "Game Title")]
         public string GameTitle { get; set; }
         [Required]
+        [Display(Name = "Genre")]
         public Genre Genre { get; set; }
         [Required]
+        [Display(Name = "Number Of Players")]
         public int NumberOfPlayers { get; set; }
         [Required]
-        public decimal TimeToPlayHours { get; set; }
+        [Display(Name = "Time to Play (minutes)")]
+        public int TimeToPlayMin { get; set; }
         [Required]
+        [Display(Name = "Number of Times Played")]
         public int TimesPlayed { get; set; }
         [Required]
+        [Display(Name = "Has Expansions?")]
         public bool Expansions { get; set; }
     }
 }

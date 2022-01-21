@@ -10,13 +10,6 @@
     <h4>RPGBookDetail</h4>
     <hr />
     <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.BookID)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.BookID)
-        </dd>
 
         <dt>
             @Html.DisplayNameFor(model => model.BookTitle)
@@ -34,9 +27,17 @@
             @Html.DisplayFor(model => model.RPGSystem)
         </dd>
 
+        <dt>
+            @Html.DisplayNameFor(model => model.BookType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookType)
+        </dd>
+
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.BookID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Edit Book", "Edit", new { id = Model.BookID }) |
+    @Html.ActionLink("Back to Book List", "Index")
 </p>
