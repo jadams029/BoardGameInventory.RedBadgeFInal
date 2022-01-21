@@ -56,7 +56,7 @@ namespace BoardGameInventory.Controllers
                 GameTitle = detail.GameTitle,
                 Genre = detail.Genre,
                 NumberOfPlayers = detail.NumberOfPlayers,
-                TimeToPlayHours = detail.TimeToPlayHours,
+                TimeToPlayMin = detail.TimeToPlayMin,
                 TimesPlayed = detail.TimesPlayed,
                 Expansions = detail.Expansions
             };

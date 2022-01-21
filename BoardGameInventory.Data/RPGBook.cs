@@ -15,10 +15,13 @@ namespace BoardGameInventory.Data
         [Required]
         public Guid OwnerID { get; set; }
         [Required]
+        [Display(Name = "Book Title")]
         public string BookTitle { get; set; }
         [Required]
+        [Display(Name = "RPG System")]
         public string RPGSystem { get; set; }
         [Required]
+        [Display(Name = "Book Type")]
         public BookType BookType { get; set; }
 
     }

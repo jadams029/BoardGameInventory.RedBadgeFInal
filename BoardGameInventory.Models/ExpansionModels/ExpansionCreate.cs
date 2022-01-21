@@ -12,8 +12,10 @@ namespace BoardGameInventory.Models.ExpansionModels
         [Required]
         public int GameID { get; set; }
         [Required]
+        [Display(Name ="Expansion Title")]
         public string ExpansionTitle { get; set; }
         [Required]
+        [Display(Name ="Changes to Base Game")]
         public string ChangesToBase { get; set; }
     }
 }
