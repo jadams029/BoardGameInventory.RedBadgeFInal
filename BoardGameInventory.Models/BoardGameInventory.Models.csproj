@@ -67,6 +67,14 @@
     <Compile Include="RPGBookModels\RPGBookDetail.cs" />
     <Compile Include="RPGBookModels\RPGBookEdit.cs" />
     <Compile Include="RPGBookModels\RPGBookListItem.cs" />
+    <Compile Include="W40kArmy\W40kArmyCreate.cs" />
+    <Compile Include="W40kArmy\W40kArmyDetail.cs" />
+    <Compile Include="W40kArmy\W40kArmyEdit.cs" />
+    <Compile Include="W40kArmy\W40kArmyListItem.cs" />
+    <Compile Include="W40kModel\W40kModelCreate.cs" />
+    <Compile Include="W40kModel\W40kModelDetail.cs" />
+    <Compile Include="W40kModel\W40kModelEdit.cs" />
+    <Compile Include="W40kModel\W40kModelListItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

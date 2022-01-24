@@ -80,6 +80,8 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RPGBook.cs" />
+    <Compile Include="W40kArmy.cs" />
+    <Compile Include="W40kModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
