@@ -173,6 +173,8 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\RPGBookController.cs" />
+    <Compile Include="Controllers\W40kArmyController.cs" />
+    <Compile Include="Controllers\W40kModelController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -252,9 +254,15 @@
     <Content Include="Views\RPGBook\Delete.cshtml" />
     <Content Include="Views\RPGBook\Create.cshtml" />
     <Content Include="Views\RPGBook\Index.cshtml" />
+    <Content Include="Views\W40kModel\Index.cshtml" />
+    <Content Include="Views\W40kModel\Create.cshtml" />
+    <Content Include="Views\W40kModel\Edit.cshtml" />
+    <Content Include="Views\W40kModel\Details.cshtml" />
+    <Content Include="Views\W40kModel\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\W40kArmy\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

@@ -1,0 +1,66 @@
+﻿@model BoardGameInventory.Models.W40kModel.W40kModelDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>W40kModelDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ModelID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModelID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModelName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModelName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MultipleLoadouts)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MultipleLoadouts)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PointsCost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PointsCost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsBuilt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsBuilt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsPainted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsPainted)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
