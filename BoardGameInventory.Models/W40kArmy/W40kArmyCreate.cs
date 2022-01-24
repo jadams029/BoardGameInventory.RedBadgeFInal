@@ -9,6 +9,7 @@ namespace BoardGameInventory.Models.W40kArmy
 {
     public class W40kArmyCreate
     {
+        public string ArmyName { get; set; }
         public Army Army { get; set; }
         public int ModelID { get; set; }
         public bool CodexAvailable { get; set; }
