@@ -77,6 +77,10 @@
     <Compile Include="Migrations\202201210521474_ChangedHoursToMinAndDecToInt.Designer.cs">
       <DependentUpon>202201210521474_ChangedHoursToMinAndDecToInt.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202201250008161_40KStuffAdded.cs" />
+    <Compile Include="Migrations\202201250008161_40KStuffAdded.Designer.cs">
+      <DependentUpon>202201250008161_40KStuffAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RPGBook.cs" />
@@ -102,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202201210521474_ChangedHoursToMinAndDecToInt.resx">
       <DependentUpon>202201210521474_ChangedHoursToMinAndDecToInt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201250008161_40KStuffAdded.resx">
+      <DependentUpon>202201250008161_40KStuffAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
