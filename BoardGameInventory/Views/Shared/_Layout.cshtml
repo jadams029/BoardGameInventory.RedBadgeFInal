@@ -22,7 +22,7 @@
                     <h6>|</h6>
                     @if (User.Identity.IsAuthenticated)
                     {
-                        <li class="text-black">@Html.ActionLink("Board Games", "Index", "BoardGame")</li>     
+                        <li>@Html.ActionLink("Board Games", "Index", "BoardGame")</li>     
                         <h6 class=text-black>|</h6>               
                         <li>@Html.ActionLink("Expansions", "Index", "Expansion")</li>
                         <h6 class=text-black>|</h6>
