@@ -259,10 +259,14 @@
     <Content Include="Views\W40kModel\Edit.cshtml" />
     <Content Include="Views\W40kModel\Details.cshtml" />
     <Content Include="Views\W40kModel\Delete.cshtml" />
+    <Content Include="Views\W40kArmy\Index.cshtml" />
+    <Content Include="Views\W40kArmy\Create.cshtml" />
+    <Content Include="Views\W40kArmy\Details.cshtml" />
+    <Content Include="Views\W40kArmy\Edit.cshtml" />
+    <Content Include="Views\W40kArmy\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\W40kArmy\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

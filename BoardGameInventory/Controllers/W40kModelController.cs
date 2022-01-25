@@ -34,7 +34,7 @@ namespace BoardGameInventory.Controllers
             var service = CreateModelService();
             if (service.CreateModel(model))
             {
-                TempData["SaveResult"] = "Your Model was added to Inventory";
+                TempData["SaveResult"] = "Your Model was Added to Inventory";
                 return RedirectToAction("Index");
             };
             ModelState.AddModelError("", "Model not added.");
@@ -95,7 +95,7 @@ namespace BoardGameInventory.Controllers
         {
             var service = CreateModelService();
             service.DeleteModel(id);
-            TempData["SaveResult"] = "Your model was deleted.";
+            TempData["SaveResult"] = "Your Model was Deleted.";
             return RedirectToAction("Index");
         }
         private W40kModelService CreateModelService()
