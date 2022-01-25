@@ -19,16 +19,24 @@
             <div class="collapse navbar-collapse" id="navbarColor03">
                 <ul class="navbar-nav me-auto">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <h6 class=text-black>|</h6>
                     @if (User.Identity.IsAuthenticated)
                     {
-                        <li>@Html.ActionLink("Board Games", "Index", "BoardGame")</li>                     
+                        <li>@Html.ActionLink("Board Games", "Index", "BoardGame")</li>     
+                        <h6 class=text-black>|</h6>               
                         <li>@Html.ActionLink("Expansions", "Index", "Expansion")</li>
+                        <h6 class=text-black>|</h6>
                         <li>@Html.ActionLink("RPG Books", "Index", "RPGBook")</li>
+                        <h6 class=text-black>|</h6>               
                         <li>@Html.ActionLink("40k Armies", "Index", "W40kArmy")</li>
+                        <h6 class=text-black>|</h6>               
                         <li>@Html.ActionLink("40k Models", "Index", "W40kModel")</li>
+                        <h6 class=text-black>|</h6>               
                     }
                     <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <h6 class=text-black>|</h6>              
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <h6 class=text-black>|</h6>              
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
