@@ -17,7 +17,7 @@ namespace BoardGameInventory.Controllers
             var userID = Guid.Parse(User.Identity.GetUserId());
             var service = new W40kModelService(userID);
             var model = service.GetModels();
-            return View();
+            return View(model);
         }
         public ActionResult Create()
         {

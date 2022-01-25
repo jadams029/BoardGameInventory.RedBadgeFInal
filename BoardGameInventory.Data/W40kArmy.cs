@@ -46,15 +46,21 @@ namespace BoardGameInventory.Data
         }
     public class W40kArmy
     {
+        [Required]
         public Guid OwnerID { get; set; }
         [Key]
         public int ArmyID { get; set; }
+        [Required]
         public Army Army { get; set; }
+        [Required]
         public string ArmyName { get; set; }
+        [Required]
         [ForeignKey("W40KModel")]
-        public int ModelID { get; set; }
+        public int ModelID { get; set; }        
         public virtual W40kModel W40KModel { get; set; }
+        [Required]
         public bool CodexAvailable { get; set; }
+        [Required]
         public bool CodexOwned { get; set; }
 
 

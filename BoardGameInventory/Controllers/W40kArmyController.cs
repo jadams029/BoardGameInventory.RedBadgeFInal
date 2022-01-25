@@ -9,6 +9,7 @@ using System.Web.Mvc;
 
 namespace BoardGameInventory.Controllers
 {
+    [Authorize]
     public class W40kArmyController : Controller
     {
         // GET: W40kArmy
@@ -17,7 +18,7 @@ namespace BoardGameInventory.Controllers
             var userID = Guid.Parse(User.Identity.GetUserId());
             var service = new W40kArmyService(userID);
             var model = service.GetArmies();
-            return View();
+            return View(model);
         }
         public ActionResult Create()
         {
