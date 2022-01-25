@@ -62,7 +62,7 @@ namespace BoardGameInventory.Data
         public bool CodexAvailable { get; set; }
         [Required]
         public bool CodexOwned { get; set; }
-
+        //public virtual List<W40kModel> ModelList { get; set; }
 
     }
 }

@@ -8,8 +8,8 @@
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+<body style="background-image: url('../../Content/images/kevin-mueller-NjjONA3K0-k-unsplash.jpg');">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,10 +19,10 @@
             <div class="collapse navbar-collapse" id="navbarColor03">
                 <ul class="navbar-nav me-auto">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <h6 class=text-black>|</h6>
+                    <h6>|</h6>
                     @if (User.Identity.IsAuthenticated)
                     {
-                        <li>@Html.ActionLink("Board Games", "Index", "BoardGame")</li>     
+                        <li class="text-black">@Html.ActionLink("Board Games", "Index", "BoardGame")</li>     
                         <h6 class=text-black>|</h6>               
                         <li>@Html.ActionLink("Expansions", "Index", "Expansion")</li>
                         <h6 class=text-black>|</h6>
@@ -43,6 +43,7 @@
         </div>
     </nav>
 
+    
 
     <div class="container body-content">
         @RenderBody()
@@ -51,6 +52,7 @@
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
+    
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

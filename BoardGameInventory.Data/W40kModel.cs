@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,5 +32,7 @@ namespace BoardGameInventory.Data
         public int PointsCosts { get; set; }
         public bool IsBuilt { get; set; }
         public bool IsPainted { get; set; }
+        //[ForeignKey("W40kArmy")]
+        //public int ArmyID { get; set; }
     }
 }
