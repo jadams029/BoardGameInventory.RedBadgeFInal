@@ -1,5 +1,6 @@
 ﻿using BoardGameInventory.Data;
 using BoardGameInventory.Models.BoardGameModels;
+using BoardGameInventory.Models.ExpansionModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -59,7 +60,12 @@ namespace BoardGameInventory.Services
                     TimeToPlayMin = entity.TimeToPlayMin,
                     TimesPlayed = entity.TimesPlayed,
                     Expansions = entity.Expansions,
-                    
+                    ExpansionsList = entity.ExpansionsList.Select(l => new ExpansionListItem
+                    {
+                        ExpansionID = l.ExpansionID,
+                        ExpansionTitle = l.ExpansionTitle
+                    }
+                        ).ToList()
 
                     
                 };
