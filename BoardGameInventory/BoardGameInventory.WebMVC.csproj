@@ -173,6 +173,8 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\RPGBookController.cs" />
+    <Compile Include="Controllers\W40kArmyController.cs" />
+    <Compile Include="Controllers\W40kModelController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -184,6 +186,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap-vapor.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -252,6 +255,16 @@
     <Content Include="Views\RPGBook\Delete.cshtml" />
     <Content Include="Views\RPGBook\Create.cshtml" />
     <Content Include="Views\RPGBook\Index.cshtml" />
+    <Content Include="Views\W40kModel\Index.cshtml" />
+    <Content Include="Views\W40kModel\Create.cshtml" />
+    <Content Include="Views\W40kModel\Edit.cshtml" />
+    <Content Include="Views\W40kModel\Details.cshtml" />
+    <Content Include="Views\W40kArmy\Index.cshtml" />
+    <Content Include="Views\W40kArmy\Create.cshtml" />
+    <Content Include="Views\W40kArmy\Details.cshtml" />
+    <Content Include="Views\W40kArmy\Edit.cshtml" />
+    <Content Include="Views\W40kArmy\Delete.cshtml" />
+    <Content Include="Views\W40kModel\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

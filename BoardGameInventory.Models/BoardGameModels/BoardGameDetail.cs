@@ -1,4 +1,5 @@
 ﻿using BoardGameInventory.Data;
+using BoardGameInventory.Models.ExpansionModels;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -23,5 +24,7 @@ namespace BoardGameInventory.Models.BoardGameModels
         public int TimesPlayed { get; set; }
         [Display(Name = "Has Expansions?")]
         public bool Expansions { get; set; }
+
+        public List<ExpansionListItem> ExpansionsList { get; set; }
     }
 }

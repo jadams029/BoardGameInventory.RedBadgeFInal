@@ -34,6 +34,8 @@ namespace BoardGameInventory.Data
         public DbSet<BoardGame> BoardGames { get; set;}
         public DbSet<Expansion> Expansions  { get; set;}
         public DbSet<RPGBook> RPGBooks { get; set;}
+        public DbSet<W40kArmy> W40KArmies { get; set;}
+        public DbSet<W40kModel> W40KModels { get; set;}
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
